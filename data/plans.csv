@@ -1,0 +1,4 @@
+plan_id,household_id,revision,valid_from,valid_to,service_type,frequency
+P1,H11,1,2026-01-01,2026-02-28,bathing,2/month
+P1,H11,2,2026-03-01,,bathing,4/month
+P2,H12,1,2026-02-01,,escort,1/month

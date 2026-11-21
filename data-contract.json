@@ -1,0 +1,41 @@
+{
+  "project": "居家照护计划履约资料",
+  "data_is_synthetic": true,
+  "encoding": "UTF-8",
+  "files": {
+    "plans.csv": {
+      "columns": [
+        "plan_id",
+        "household_id",
+        "revision",
+        "valid_from",
+        "valid_to",
+        "service_type",
+        "frequency"
+      ],
+      "row_count": 3
+    },
+    "dispatch.csv": {
+      "columns": [
+        "dispatch_id",
+        "plan_id",
+        "planned_at",
+        "staff_id",
+        "status",
+        "reason"
+      ],
+      "row_count": 4
+    },
+    "execution.csv": {
+      "columns": [
+        "event_id",
+        "dispatch_id",
+        "executed_at",
+        "actual_staff",
+        "confirmation",
+        "source_revision"
+      ],
+      "row_count": 2
+    }
+  }
+}

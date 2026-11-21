@@ -1,0 +1,5 @@
+dispatch_id,plan_id,planned_at,staff_id,status,reason
+D1,P1,2026-02-05,W1,completed,
+D2,P1,2026-02-18,W2,cancelled,household_request
+D3,P1,2026-03-09,W3,cancelled,provider_unavailable
+D4,P2,2026-03-12,W4,rescheduled,family_conflict
