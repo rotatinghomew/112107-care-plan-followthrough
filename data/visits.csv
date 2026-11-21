@@ -1,0 +1,4 @@
+receipt,home,station,observed_at,noted_at,types,minutes,family_signed,status,replaces
+V1,H1,南,2026-06-07T09:00,2026-06-07T11:00,助浴,40,yes,valid,
+V2,H1,南,2026-06-08T09:00,2026-06-08T11:00,助浴;保洁,50,yes,valid,
+V3,H1,南,2026-06-07T09:00,2026-06-09T08:00,助浴,40,no,void,V1

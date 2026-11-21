@@ -1,41 +1,79 @@
 {
-  "project": "居家照护计划履约资料",
   "data_is_synthetic": true,
-  "encoding": "UTF-8",
+  "timezone": "Asia/Shanghai",
   "files": {
-    "plans.csv": {
+    "obligations.csv": {
       "columns": [
-        "plan_id",
-        "household_id",
-        "revision",
-        "valid_from",
-        "valid_to",
-        "service_type",
-        "frequency"
+        "obligation",
+        "home",
+        "station",
+        "type",
+        "start",
+        "until",
+        "makeup_until",
+        "min_gap_hours",
+        "minutes",
+        "can_substitute",
+        "cancel_hours"
+      ],
+      "row_count": 5
+    },
+    "visits.csv": {
+      "columns": [
+        "receipt",
+        "home",
+        "station",
+        "observed_at",
+        "noted_at",
+        "types",
+        "minutes",
+        "family_signed",
+        "status",
+        "replaces"
       ],
       "row_count": 3
     },
-    "dispatch.csv": {
+    "windows.csv": {
       "columns": [
-        "dispatch_id",
-        "plan_id",
-        "planned_at",
-        "staff_id",
-        "status",
-        "reason"
+        "home",
+        "from",
+        "until",
+        "condition",
+        "agreed_at"
       ],
       "row_count": 4
     },
-    "execution.csv": {
+    "roster.csv": {
       "columns": [
-        "event_id",
-        "dispatch_id",
-        "executed_at",
-        "actual_staff",
-        "confirmation",
-        "source_revision"
+        "shift",
+        "station",
+        "worker",
+        "from",
+        "until",
+        "types",
+        "status",
+        "noted_at"
       ],
-      "row_count": 2
+      "row_count": 4
+    },
+    "promises.csv": {
+      "columns": [
+        "promise",
+        "obligation",
+        "shift",
+        "confirmed_at",
+        "state"
+      ],
+      "row_count": 1
+    },
+    "weekly_issue.csv": {
+      "columns": [
+        "issue",
+        "week_start",
+        "cutoff",
+        "signed_at"
+      ],
+      "row_count": 1
     }
   }
 }
